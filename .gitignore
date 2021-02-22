@@ -107,10 +107,11 @@ celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
-
+.vscode
 # Environments
 .env
 .venv
+myvenv
 env/
 venv/
 ENV/
@@ -136,9 +137,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+secret.json
 # pytype static type analyzer
 .pytype/
-
+UserList.csv
 # profiling data
 .prof
 
