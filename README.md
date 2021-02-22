@@ -32,9 +32,11 @@
 
 `git clone https://github.com/minsgy/LIKELION_Apply_Crawling.git`
 
-### 2. 종속성 다운로드
+### 2. 가상 환경 생성 및 실행 후, 종속성 다운로드
 
-`pip install -r requirements.txt`
+- `python -m venv <가상환경 이름>`
+- `. <가상환경 이름>/script/activate`, mac:`. <가상환경 이름>/bin/activate`
+- `pip install -r requirements.txt`
 
 ### 3.기본 세팅
 
@@ -47,3 +49,9 @@
 ※ 예시
 
 ![image](https://user-images.githubusercontent.com/64149514/108707484-66101f00-7553-11eb-9173-4e613f667043.png)
+
+### 4. 실행 과정
+
+- `python made_find.py` 실행
+- 크롬이 켜지면서, 크롤링 과정을 거치고 Chrome 종료.
+- `UserList.csv` 파일 생성 (이름/전화번호/합불 여부)

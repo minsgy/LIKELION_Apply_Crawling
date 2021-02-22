@@ -61,6 +61,7 @@ for i in range(len(user_list)):
     apply_page_click(browser, i+1) # 지원자의 이름/전화번호를 추가하는 함수
     information[i].append(user_list[i][3]) # 해당 지원자의 합불 여부를 추가합니다.
 
+browser.quit()
 
 ''' Pandas CSV 파일 생성 파트 '''
 dataFrame = pd.DataFrame(information,  columns=['이름','전화번호', '합불 여부']) 
