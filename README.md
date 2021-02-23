@@ -9,7 +9,7 @@
 
 ## DEMO GIF
 
-- <img src="./crawling_play.gif" width='480px'>
+<img src="./crawling_demo.gif" width='500px'>
 
 ## 👨🏻‍💻 개요
 
