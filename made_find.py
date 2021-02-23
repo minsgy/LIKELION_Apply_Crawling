@@ -1,16 +1,7 @@
-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import pandas as pd
 import json
-
-# Secret.json 읽기 [LikeLion 지원페이지 아이디/비번 숨기기]
-def SECRET_KEY_OPEN():
-    global APPLY_ID, APPLY_PW
-    with open('secret.json') as token:
-        json_data = json.loads(token.read())
-        APPLY_ID = json_data["APPLY_ID"] # APPLY_ID
-        APPLY_PW = json_data["APPLY_PW"] # APPLY_PW
 
 def Login_Page_Connection(browser):
     browser.find_element_by_xpath("/html/body/main/div/div/div/div/a/button").send_keys(Keys.ENTER)
