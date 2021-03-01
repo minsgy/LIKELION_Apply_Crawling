@@ -4,8 +4,9 @@
 
 ## 제작자
 
-- 16학번 컴퓨터소프트웨어공학과 [최민석](https://github.com/minsgy)
-- 18학번 컴퓨터공학과 [최세환](https://github.com/Mactto)
+- 순천향대학교 16학번 컴퓨터소프트웨어공학과 [최민석](https://github.com/minsgy) - CSV[엑셀파일] 자동 생성 로직
+- 순천향대학교 18학번 컴퓨터공학과 [최세환](https://github.com/Mactto) - 데이터 분석
+- 한국기술교육대학교 17학번 컴퓨터공학부 [임우열](https://github.com/Woo-Yeol) - HWP[한글파일] 자동 생성 로직
 
 ## DEMO GIF
 
