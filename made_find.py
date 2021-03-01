@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import pandas as pd
-import json
+import json,re,os
 
 def Login_Page_Connection(browser):
     browser.find_element_by_xpath("/html/body/main/div/div/div/div/a/button").send_keys(Keys.ENTER)
@@ -33,6 +33,40 @@ def apply_page_click(browser, number):
     information.append([name, phone_number]) # 지원자 이름, 휴대폰 번호 저장
     browser.back() # 페이지 뒤로가기
 
+def Save_application(browser):
+    # 지원자 수 확인하기
+    apply_num = browser.find_element_by_css_selector('#likelion_num > div:nth-child(2) > p:nth-child(2)').text
+    apply_num = re.findall("\d+", apply_num)
+
+    for num in range(1 , eval(apply_num[0]) + 1):
+
+        # 지원자 접수 방문하기
+        object = browser.find_element_by_css_selector("#likelion_num > div.applicant_page > a:nth-child(" + str(num) + ") > div > div.apply_status > button")
+        object.click()
+
+        # 지원자 인적사항
+        name = browser.find_element_by_css_selector('#likelion_num > div.col-md-6.col-xs-12.text-left.applicant_detail_page > h3').text
+        start_undergrad = browser.find_element_by_css_selector('#likelion_num > div:nth-child(2) > div:nth-child(1) > p:nth-child(1)').text
+        undergrad = browser.find_element_by_css_selector('#likelion_num > div:nth-child(2) > div:nth-child(1) > p:nth-child(3)').text
+
+        # 지원자 directory 생성
+        file_name = str(name) + '_' + str(start_undergrad) + '_' + str(undergrad)
+        path = './' + file_name
+        try: 
+            if not os.path.exists(path): 
+                os.makedirs(path) 
+        except OSError: 
+            print("Error: Cannot create the directory {}".format(path))
+
+        # text 크롤링하기
+        text = browser.find_element_by_css_selector('body > div.answer_view').text
+
+        # 파일 생성 및 저장하기
+        with open(path +'/'+ file_name + '.hwp','w') as file:
+            file.write(text)
+
+        # 이전 페이지로 돌아가기
+        browser.back()
 
 ''' 메인 함수 '''
 
@@ -47,6 +81,7 @@ Id_Password_Submit(browser) # 로그인 페이지에서 로그인 하기
 browser.find_element_by_xpath('//*[@id="likelion_num"]/div[2]/a/button').send_keys(Keys.ENTER) # 로그인 후, 지원자 리스트 페이지 버튼 클릭
 
 User_append(browser) # 지원자 리스트 저장함.
+Save_application(browser) # 지원서 개별 폴더에 저장하기
 
 for i in range(len(user_list)):
     apply_page_click(browser, i+1) # 지원자의 이름/전화번호를 추가하는 함수
