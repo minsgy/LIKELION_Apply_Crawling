@@ -33,6 +33,7 @@ def apply_page_click(browser, number):
     information.append([name, phone_number]) # 지원자 이름, 휴대폰 번호 저장
     browser.back() # 페이지 뒤로가기
 
+''' 한국기술교육대학 이우열 [지원자 자소서 크롤러 Logic]'''
 def Save_application(browser):
     # 지원자 수 확인하기
     apply_num = browser.find_element_by_css_selector('#likelion_num > div:nth-child(2) > p:nth-child(2)').text
