@@ -24,11 +24,12 @@
 - Pandas
 
 ## 사용 전, 환경 세팅
-
+   
 1. Chrome 버전 확인 : 주소 창에 입력 - `chrome://version` ![image](https://user-images.githubusercontent.com/60251579/108708599-fd29a680-7554-11eb-845d-837ac698bbc4.png)
 
 2. Chrome 버젼과 Chrome 드라이버 버전 맞추기.[ChromeDriver 다운 링크](https://chromedriver.chromium.org/downloads) ![image](https://user-images.githubusercontent.com/60251579/108708679-1c283880-7555-11eb-8590-0474dbf8850b.png)
-
+ 
+ 
 3. 다운받은 `ChromeDriver` 파일을 클론받은 `Root` 폴더에 저장.
 
 ## 사용법
