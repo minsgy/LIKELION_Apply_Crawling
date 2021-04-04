@@ -54,7 +54,7 @@
 
 ※ 예시
 
-![image](https://user-images.githubusercontent.com/64149514/108707484-66101f00-7553-11eb-9173-4e613f667043.png)
+- ![image](https://user-images.githubusercontent.com/64149514/108707484-66101f00-7553-11eb-9173-4e613f667043.png)
 
 ### 4. 실행 과정
 
