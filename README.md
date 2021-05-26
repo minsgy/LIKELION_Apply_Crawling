@@ -4,9 +4,7 @@
 
 ## 제작자
 
-- 순천향대학교 16학번 컴퓨터소프트웨어공학과 [최민석](https://github.com/minsgy) - CSV[엑셀파일] 자동 생성 로직
-- 순천향대학교 18학번 컴퓨터공학과 [최세환](https://github.com/Mactto) - 데이터 분석
-- 한국기술교육대학교 17학번 컴퓨터공학부 [임우열](https://github.com/Woo-Yeol) - HWP[한글파일] 자동 생성 로직
+- 순천향대학교 16학번 컴퓨터소프트웨어공학과 [최민석](https://github.com/minsgy)
 
 ## DEMO GIF
 
@@ -24,12 +22,11 @@
 - Pandas
 
 ## 사용 전, 환경 세팅
-   
+
 1. Chrome 버전 확인 : 주소 창에 입력 - `chrome://version` ![image](https://user-images.githubusercontent.com/60251579/108708599-fd29a680-7554-11eb-845d-837ac698bbc4.png)
 
 2. Chrome 버젼과 Chrome 드라이버 버전 맞추기.[ChromeDriver 다운 링크](https://chromedriver.chromium.org/downloads) ![image](https://user-images.githubusercontent.com/60251579/108708679-1c283880-7555-11eb-8590-0474dbf8850b.png)
- 
- 
+
 3. 다운받은 `ChromeDriver` 파일을 클론받은 `Root` 폴더에 저장.
 
 ## 사용법
@@ -61,3 +58,30 @@
 - `python made_find.py` 실행
 - 크롬이 켜지면서, 크롤링 과정을 거치고 Chrome 종료.
 - `UserList.csv` 파일 생성 (이름/전화번호/합불 여부)
+
+### 5. 도음을 주신 분들께 감사를 표합니다.
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Woo-Yeol"><img src="https://avatars.githubusercontent.com/u/63551948?v=4" width="100px;" alt=""/><br /><sub><b>Woo-Yeol</b></sub></a><br />
+    </td>
+    <td align="center"><a href="https://github.com/Mactto"><img src="https://avatars.githubusercontent.com/u/64149514?v=4" width="100px;" alt=""/><br /><sub><b>Mactto</b></sub></a><br />
+    </td>
+    <td align="center"><a href="https://github.com/ygnaiih1680"><img src="https://avatars.githubusercontent.com/u/48740869?v=4" width="100px;" alt=""/><br /><sub><b>ygnaiih1680</b></sub></a><br />
+    </td>
+    <td align="center"><a href="https://github.com/ndaemy"><img src="https://avatars.githubusercontent.com/u/18691542?v=4" width="100px;" alt=""/><br /><sub><b>ndaemy</b></sub></a><br />
+    </td>
+    <td align="center"><a href="https://github.com/noah0316"><img src="https://avatars.githubusercontent.com/u/63908856?v=4" width="100px;" alt=""/><br /><sub><b>ndaemy</b></sub></a><br />
+    </td>
+    <td align="center"><a href="https://github.com/13circle"><img src="https://avatars.githubusercontent.com/u/25195384?v=4" width="100px;" alt=""/><br /><sub><b>13circle</b></sub></a><br />
+    </td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->

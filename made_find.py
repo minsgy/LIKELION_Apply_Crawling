@@ -82,7 +82,7 @@ Id_Password_Submit(browser) # 로그인 페이지에서 로그인 하기
 browser.find_element_by_xpath('//*[@id="likelion_num"]/div[2]/a/button').send_keys(Keys.ENTER) # 로그인 후, 지원자 리스트 페이지 버튼 클릭
 
 User_append(browser) # 지원자 리스트 저장함.
-Save_application(browser) # 지원서 개별 폴더에 저장하기
+# Save_application(browser) # 지원서 개별 폴더에 저장하기
 
 for i in range(len(user_list)):
     apply_page_click(browser, i+1) # 지원자의 이름/전화번호를 추가하는 함수
@@ -94,3 +94,5 @@ browser.quit()
 dataFrame = pd.DataFrame(information,  columns=['이름','전화번호', '합불 여부']) 
 dataFrame = dataFrame.sort_values(by=['합불 여부', '이름']) # 합불 여부 정렬 후, 이름 순 정렬(ㄱ,ㄴ,ㄷ,ㄹ)
 dataFrame.to_csv('UserList.csv', sep=',', index = False) # CSV 파일 생성 , 구분자','
+
+# dataFrame.to_excel('UserList.csv',index = False) # CSV 파일 생성 , 구분자','
