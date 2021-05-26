@@ -59,7 +59,7 @@
 - 크롬이 켜지면서, 크롤링 과정을 거치고 Chrome 종료.
 - `UserList.csv` 파일 생성 (이름/전화번호/합불 여부)
 
-### 5. 도음을 주신 분들께 감사를 표합니다.
+### 5. 도움 주신 분들
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
