@@ -74,7 +74,7 @@
     </td>
     <td align="center"><a href="https://github.com/ndaemy"><img src="https://avatars.githubusercontent.com/u/18691542?v=4" width="100px;" alt=""/><br /><sub><b>ndaemy</b></sub></a><br />
     </td>
-    <td align="center"><a href="https://github.com/noah0316"><img src="https://avatars.githubusercontent.com/u/63908856?v=4" width="100px;" alt=""/><br /><sub><b>ndaemy</b></sub></a><br />
+    <td align="center"><a href="https://github.com/noah0316"><img src="https://avatars.githubusercontent.com/u/63908856?v=4" width="100px;" alt=""/><br /><sub><b>noah0316</b></sub></a><br />
     </td>
     <td align="center"><a href="https://github.com/13circle"><img src="https://avatars.githubusercontent.com/u/25195384?v=4" width="100px;" alt=""/><br /><sub><b>13circle</b></sub></a><br />
     </td>
