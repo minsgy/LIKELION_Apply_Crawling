@@ -4,7 +4,7 @@
 
 ## 제작자
 
-- 순천향대학교 16학번 컴퓨터소프트웨어공학과 [최민석](https://github.com/minsgy)
+- 순천향대학교 16학번 컴퓨터소프트웨어공학 [최민석](https://github.com/minsgy)
 
 ## DEMO GIF
 
